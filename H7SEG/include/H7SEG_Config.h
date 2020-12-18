@@ -1,0 +1,112 @@
+
+#ifndef _H7SEG_CONFIG_H_
+#define _H7SEG_CONFIG_H_
+
+
+/*
+  1- 	AVR_CONTROLLER
+  2-    ARM_CONTROLLER
+ */
+
+#define CONTROLLER_SELECT				ARM
+
+
+
+#if( CONTROLLER_SELECT		==		ARM)
+
+
+#define MGPIO_LOW    0
+#define MGPIO_HIGH   1
+
+
+/*
+MGPIO_PORTA
+MGPIO_PORTB
+MGPIO_PORTC
+            */
+#define H7SEG_a_PORT				MGPIO_PORTA
+#define H7SEG_b_PORT				MGPIO_PORTA
+#define H7SEG_c_PORT				MGPIO_PORTA
+#define H7SEG_d_PORT		    	MGPIO_PORTA
+#define H7SEG_e_PORT		    	MGPIO_PORTA
+#define H7SEG_f_PORT		    	MGPIO_PORTA
+#define H7SEG_g_PORT		    	MGPIO_PORTA
+#define H7SEG_dp_PORT		    	MGPIO_PORTA
+
+
+#define  H7SEG_1_CONTROL_PORT			MGPIO_PORTB
+#define  H7SEG_2_CONTROL_PORT			MGPIO_PORTB
+     /*
+MGPIO_PIN0
+MGPIO_PIN1
+MGPIO_PIN2
+MGPIO_PIN3
+MGPIO_PIN4
+MGPIO_PIN5
+MGPIO_PIN6
+MGPIO_PIN7
+MGPIO_PIN8
+MGPIO_PIN9
+MGPIO_PIN10
+MGPIO_PIN11
+MGPIO_PIN12
+MGPIO_PIN13
+MGPIO_PIN14
+MGPIO_PIN15
+
+
+*/
+#define H7SEG_a_PIN			     	MGPIO_PIN0
+#define H7SEG_b_PIN			     	MGPIO_PIN1
+#define H7SEG_c_PIN			     	MGPIO_PIN2
+#define H7SEG_d_PIN			     	MGPIO_PIN3
+#define H7SEG_e_PIN			     	MGPIO_PIN4
+#define H7SEG_f_PIN			     	MGPIO_PIN5
+#define H7SEG_g_PIN			     	MGPIO_PIN6
+#define H7SEG_dp_PIN		     	MGPIO_PIN7
+
+
+#define H7SEG_1_CONTROL_PIN		     MGPIO_PIN0
+#define H7SEG_2_CONTROL_PIN		     MGPIO_PIN1
+
+/*
+ MGPIO_OUTPUT_2MHZ_PP
+ MGPIO_OUTPUT_2MHZ_OP
+ MGPIO_OUTPUT_10MHZ_PP
+ MGPIO_OUTPUT_10MHZ_OP
+*/
+
+#define H7SEG_OUTPUT_MODE	 MGPIO_OUTPUT_2MHZ_PP
+
+
+
+#elif ( CONTROLLER_SELECT		==		AVR_CONTROLLER)
+
+
+
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif
